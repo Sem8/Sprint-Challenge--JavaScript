@@ -1,0 +1,37 @@
+1. Describe the biggest difference between .forEach & .map.
+
+1an. The .forEach method doesn't return anything but only calls a function on each element of an array. It can mutate the original array.
+The .map makes use of return values and returns a new array from the original array and doesn't change the original array. 
+
+2. What is the difference between a function and a method?
+
+2an. A function is a piece of code that can accept data as parameters, do some operations on that data and return a value after the data is 
+operated on. A method is a function inside an object. 
+
+
+3. What is closure?
+
+3an. Closures are functions with stored data. When a a function is declared inside another function, the inside function(s) is/are recreated again each time the outside function is called.
+Closures is when a function is nested inside another function and the nested function can refer to independent (free) variables from it's parent function.
+The function defined in the closure 'remembers' the environment in which it was created.
+
+4. Describe the four rules of the 'this' keyword.
+
+4an.  --1. The 'this' keyword can be Window / Global object binding which means when in the global scope (not inside the body of an object or an object smaller than the window object)
+ the value of “this” will be the window/console Object and will print out all of the window methods when logged to the console.
+
+      --2. The 'this' keyword can have implicit binding which means when a function is an object method and is called with a preceding dot and that dot itself is preceded by the object name,
+that object name refers to the 'this' keyword. 
+
+      --3. The 'this' keyword can have new binding means when a constructor function (function that's a template for creating objects) is used, 'this' keyword 
+refers to the new object (instance) that's created off the constructor function template.
+
+      --4. The 'this' key can have explicit binding if you change the context of the method using call or apply like so, " instance.method.call(new instance) " or " instance.method.apply(new instance) "
+it returns the results and also the object body of the new instance rather than the instance that was the previous instance. And so the 'this' keyword
+now refers to the object body of the new instance. 
+
+
+5. Why do we need super() in an extended class?
+
+5an. The super() is used to access and call functions on an object's parent. It tells the parent objects' properties to pay attention and accept the 
+child objects' properties as well. 
